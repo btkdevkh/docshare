@@ -1,0 +1,43 @@
+.sidebar {
+  position: relative;
+  background-color: #8400ff;
+}
+.sidebar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.sidebar-content nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sidebar-content a {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.logout {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+}
+.logout i {
+  color: #fff;
+}
+
+@media (min-width: 920px) {
+  .sidebar {
+    width: 300px;
+    max-width: 300px;
+    min-height: 100vh;
+  }
+  .sidebar-content {
+    position: fixed;
+    width: inherit;
+  }
+}

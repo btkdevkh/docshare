@@ -1,0 +1,27 @@
+.navbar {
+  color: white;
+  padding: 10px;
+  background-color: #8c13fe;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.navbar ul a {
+  font-weight: 700;
+}
+.user-connected {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-connected p {
+  font-weight: 700;
+}

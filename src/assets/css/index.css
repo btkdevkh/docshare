@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  font-family: 'Ubuntu', sans-serif;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+i {
+  font-size: 1.3rem;
+}
+a.active {
+  color: #ff0095;
+}
+a.active span {
+  color: #ff0095;
+}
+
+.App .container {
+  position: relative;
+  flex-grow: 1;
+}
+
+form {
+  width: 300px;
+  max-width: 300px;
+  margin: 25px auto;
+}
+form h2 {
+  margin-bottom: 25px;
+}
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  background-color: #ddd;
+}
+form input, form .select {
+  margin: 10px 0;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  font-family: inherit;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #ff0095;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+table th {
+  padding: 15px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+table td {
+  color: white;
+  padding: 15px;
+  background-color: #8c13fe;
+  border-radius: 5px;
+}
+table td button {
+  background-color: transparent;
+  border: none;
+}
+table td .updateDoc i {
+  color: orange;
+}
+table td .deleteDoc i {
+  color: red;
+}
+
+@media (min-width: 920px) {
+  .App {
+    display: flex;
+  }
+}
